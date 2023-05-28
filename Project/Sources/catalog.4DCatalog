@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Entity_Composition" uuid="E0B47E2326E242D1989E4946DF49B879" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Table_1" uuid="48CB6EE714B047D393298A3598E17DB9" id="1">
+		<field name="PrimaryID" uuid="0834A0161B2D4845941AE2FF8A773461" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="LegacyID" uuid="0AB22AE074924BB38AA88842D396B2FD" type="4" autosequence="true" id="2"/>
+		<field name="name" uuid="51D7667D410B44C280DA72678D4C7312" type="10" limiting_length="255" id="3"/>
+		<field name="kind" uuid="E684517484CD40F6A9540ABF41031A3D" type="10" limiting_length="255" id="4"/>
+		<field name="birthDate" uuid="7753B4B1D1ED4BEC84C91B9DCD5E073E" type="8" never_null="true" id="5">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="details" uuid="67C23FE94A1644F196FDA8390D75835B" type="21" blob_switch_size="2147483647" id="6"/>
+		<primary_key field_name="PrimaryID" field_uuid="0834A0161B2D4845941AE2FF8A773461"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="10">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="23.046142578125" top="6.4818725585938" width="120" height="253.44714355469"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>
