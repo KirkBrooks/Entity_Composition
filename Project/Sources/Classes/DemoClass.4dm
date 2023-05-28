@@ -54,8 +54,8 @@ Function save->$result : Object
 		This._updateModified()
 		$result:=This._entity.save()
 		
-		If ($isNew)
-			This._entity:=ds.Table_1.get(This._entity.PrimaryID)
+		If ($isNew) && ($result.success)
+			This._entity.reload()
 		End if 
 	End if 
 	

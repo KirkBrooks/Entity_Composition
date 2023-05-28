@@ -1,11 +1,9 @@
 //%attributes = {}
 /* This method reviews the various uses of this pattern. 
 
-
 */
 
 var $class : cs.DemoClass
-
 
 TRUNCATE TABLE([Table_1])
 // instantiate the class with a new record
