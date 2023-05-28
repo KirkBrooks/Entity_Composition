@@ -7,7 +7,7 @@
 		<field name="LegacyID" uuid="0AB22AE074924BB38AA88842D396B2FD" type="4" autosequence="true" id="2"/>
 		<field name="name" uuid="51D7667D410B44C280DA72678D4C7312" type="10" limiting_length="255" id="3"/>
 		<field name="kind" uuid="E684517484CD40F6A9540ABF41031A3D" type="10" limiting_length="255" id="4"/>
-		<field name="birthDate" uuid="7753B4B1D1ED4BEC84C91B9DCD5E073E" type="8" never_null="true" id="5">
+		<field name="signUp" uuid="7753B4B1D1ED4BEC84C91B9DCD5E073E" type="8" never_null="true" id="5">
 			<field_extra multi_line="false"/>
 		</field>
 		<field name="details" uuid="67C23FE94A1644F196FDA8390D75835B" type="21" blob_switch_size="2147483647" id="6"/>
@@ -19,7 +19,12 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<base_extra>
+	<index kind="regular" unique_keys="true" uuid="019077CC7B254B0786204C0D546D733D" type="1">
+		<field_ref uuid="0834A0161B2D4845941AE2FF8A773461" name="PrimaryID">
+			<table_ref uuid="48CB6EE714B047D393298A3598E17DB9" name="Table_1"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0">
 		<journal_file journal_file_enabled="true"/>
 	</base_extra>
 </base>
